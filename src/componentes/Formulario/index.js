@@ -8,7 +8,7 @@ const Formulario = (props) => {
 
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
-    const [imagem, setImagem] = useState('https://github.com/guilhermeonrails.png')
+    const [imagem, setImagem] = useState('')
     const [time, setTime] = useState('')
 
     const aoSalvar = (evento) => {
@@ -16,7 +16,7 @@ const Formulario = (props) => {
         props.aoColaboradorCadastrado({nome, cargo, imagem, time})
         setNome('')
         setCargo('')
-        setImagem('https://github.com/guilhermeonrails.png')
+        setImagem('')
         setTime('')
     }
 
